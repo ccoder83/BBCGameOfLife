@@ -11,6 +11,14 @@ public interface GameState {
     boolean isCellAliveAt(int row, int col);
 
     /**
+     * Switches the cell state at the given row and column from
+     * live to dead and vice versa
+     * @param row
+     * @param col
+     */
+    public void switchCellState(int row, int col);
+
+    /**
      * @return Number of rows the game has
      */
     int getRows();
